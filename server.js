@@ -5,13 +5,11 @@
 
 'use strict';
 
-let PouchDB = require('pouchdb')
-    , express = require("express")
+let express = require("express")
     , app = express()
     , bodyParser = require("body-parser")
     , port = 3000
-    , morgan = require('morgan')
-    , db = new PouchDB('pouchdb_database');
+    , morgan = require('morgan');
 
 // logs
 app.use(morgan('dev'));
@@ -32,7 +30,7 @@ app.use(bodyParser.urlencoded({extend: false}));
 app.use(bodyParser.json());
 
 // controllers
-// TODO
+app.use(require('./app/controllers'));
 
 app.listen(port, () => {
     console.log("Server running on port 3000");
