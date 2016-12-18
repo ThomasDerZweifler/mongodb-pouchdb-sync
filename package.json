@@ -1,0 +1,22 @@
+{
+  "name": "mongodb-pouchdb-sync",
+  "version": "1.0.0",
+  "description": "Just learning this, dough.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nncl/mongodb-pouchdb-sync.git"
+  },
+  "author": "nncl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nncl/mongodb-pouchdb-sync/issues"
+  },
+  "homepage": "https://github.com/nncl/mongodb-pouchdb-sync#readme",
+  "dependencies": {
+    "pouchdb": "^6.1.0"
+  }
+}
